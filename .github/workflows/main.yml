@@ -54,13 +54,13 @@ jobs:
         run: |
           set -e -o pipefail
           ./cruelbuild config                    \
-                       model=${{ matrix.model }} \
-                       name="Cruel-devel"        \
+                       model=G975F               \
+                       name="Ultimate One Ui"    \
                        toolchain=$TOOLCHAIN      \
-                       +magisk                   \
+                       +1000Hz                   \
                        +nohardening              \
                        +ttl                      \
-                       +wireguard                \
+                       +sched_...                \
                        +cifs                     \
                        +sdfat                    \
                        +ntfs                     \
