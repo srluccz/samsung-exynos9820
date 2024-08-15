@@ -55,7 +55,7 @@ jobs:
           set -e -o pipefail
           ./cruelbuild config                    \
                        model=G975F               \
-                       name="Ultimate One Ui"    \
+                       name="UltimateKernel"     \
                        toolchain=$TOOLCHAIN      \
                        +nohardening              \
                        +ttl                      \
