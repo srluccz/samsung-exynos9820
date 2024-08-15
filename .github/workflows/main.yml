@@ -57,7 +57,6 @@ jobs:
                        model=G975F               \
                        name="Ultimate One Ui"    \
                        toolchain=$TOOLCHAIN      \
-                       +1000Hz                   \
                        +nohardening              \
                        +ttl                      \
                        +sched_...                \
