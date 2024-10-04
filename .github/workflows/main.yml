@@ -59,12 +59,10 @@ jobs:
                        toolchain=$TOOLCHAIN      \
                        +magisk                   \
                        +nohardening              \
-                       +wireguard                \
                        +ttl                      \
                        +cifs                     \
                        +sdfat                    \
                        +ntfs                     \
-                       +force_dex_wqhd           \
                        +morosound                \
                        +boeffla_wl_blocker       \
           2>&1 | tee config.info
