@@ -58,7 +58,7 @@ jobs:
                        name="AuraKernel"         \
                        toolchain=$TOOLCHAIN      \
                        +magisk                   \
-                       +nohardening2             \
+                       +nohardening              \
                        +sched_performance        \
                        +noksm                    \
                        +wireguard                \
@@ -69,7 +69,6 @@ jobs:
                        +force_dex_wqhd           \
                        +morosound                \
                        +boeffla_wl_blocker       \
-                       +300hz                    \
           2>&1 | tee config.info
 
       - name: Install gcc-aarch64-linux-gnu
