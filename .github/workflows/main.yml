@@ -55,10 +55,13 @@ jobs:
           set -e -o pipefail
           ./cruelbuild config                    \
                        model=G975F               \
-                       name="UltimateKernel"     \
+                       name="AuraKernel"         \
                        toolchain=$TOOLCHAIN      \
                        +magisk                   \
-                       +nohardening              \
+                       +nohardening2             \
+                       +sched_performance        \
+                       +noksm                    \
+                       +wireguard                \
                        +ttl                      \
                        +cifs                     \
                        +sdfat                    \
@@ -66,6 +69,7 @@ jobs:
                        +force_dex_wqhd           \
                        +morosound                \
                        +boeffla_wl_blocker       \
+                       +1000hz                   \
           2>&1 | tee config.info
 
       - name: Install gcc-aarch64-linux-gnu
